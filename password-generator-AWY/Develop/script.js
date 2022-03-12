@@ -58,6 +58,9 @@ function generatePassword() {
     selected = selected.concat(num)
   }
 
+  if (selected <= 0) {
+    alert('Choose at least one character criteria');
+  }
   // if (upper) {
   //   passwordInput = upper;
   // } else if (lower) {
